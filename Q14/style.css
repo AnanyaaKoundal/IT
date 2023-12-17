@@ -1,0 +1,86 @@
+.form{
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 20px;
+}
+
+h1{
+    font-size: 30px;
+    font-family: 'Lucida Sans';
+    text-align: center;
+    color: rgb(107, 110, 132);
+}
+h2{
+    font-size: 30px;
+    font-family: 'Lucida Sans';
+    text-align: center;
+    color: rgb(26, 47, 201);
+}
+
+#customerForm{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+label{
+    font-family: 'Courier New';
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input,
+select{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+button{
+    background: linear-gradient(313deg, rgb(58 117 158), rgb(133 171 194), rgb(162 202 226));
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+#customerData{
+    margin-top: 20px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card{
+    width: 300px;
+    margin: 20px;
+    padding: 15px 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card h2{
+    font-family: 'Courier New';
+}
+.card p{
+    color: #666;
+    font-family: Arial;
+}

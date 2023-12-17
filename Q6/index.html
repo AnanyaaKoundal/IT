@@ -1,0 +1,33 @@
+<!--
+    Create an HTML page with a paragraph written on it and under which 9 buttons are placed in a 3X3 grid. The first row is for buttons labeled with colors names Red, Green, and Blue, the second row with numbers 10, 20, 30, and the third row with different font names. Click event of each of the buttons should make the appropriate change in the style of paragraph.
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <p id="text">Twenty-five hours had passed since the incident. It seemed to be a lot longer than that. That
+        twenty-five hours seemed more like a week in her mind. The fact that she still was having trouble comprehending
+        exactly what took place wasn't helping the matter. She thought if she could just get a little rest the entire
+        incident might make a little more sense.</p>
+
+    <div class="grid-container">
+        <button onclick="changeColor('red')">Red</button>
+        <button onclick="changeColor('green')">Green</button>
+        <button onclick="changeColor('blue')">Blue</button>
+        <button onclick="changeSize(10)">10</button>
+        <button onclick="changeSize(20)">20</button>
+        <button onclick="changeSize(30)">30</button>
+        <button onclick="changeFont('Courier New')">Courier New</button>
+        <button onclick="changeFont('Baskerville')">Baskerville</button>
+        <button onclick="changeFont('Impact')">Impact</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

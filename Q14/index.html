@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Customer Information Form</title>
+</head>
+
+<body>
+    <div class="form">
+
+        <form id="customerForm">
+            <h1>Customer Information Form</h1>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age" required>
+
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday" required>
+
+            <label for="foodPreferences">Food Preferences:</label>
+            <select id="foodPreferences" name="foodPreferences" required>
+                <option value="sweet">Sweet</option>
+                <option value="sour">Sour</option>
+                <option value="savoury">Savoury</option>
+            </select>
+
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+    </div>
+    <h2>Customer Information</h2>
+    <div class="container">
+        <div id="customerData"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,37 +1,38 @@
-<!-- index.html -->
-
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Home</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <style>
-        body{
-            padding-bottom: 10px;
-        }
-        #div1 {
-            text-align: center;
-            margin: 30px 380px;
-            padding: 30px;
-        }
-        h1{
-            font-size: 30px;
-            background-color: #6cca75;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Math Operation</title>
 </head>
-
 <body>
-    
-    <h1 id="div1">Welcome to E-library</h1>
-    <div class="container mt-4">
-        <div class="row" id="card_show">
+
+    <div style="text-align: center; margin-top: 50px;">
+        <h2><label for="expression">Enter Mathematical Expression:</label></h2>
+        <input type="text" id="expression" placeholder="e.g., 5 * 3 + 2">
+
+        <br><br>
+        <div class="options">
+
+            <input type="radio" id="square" name="operation" value="square">
+            <label for="square">Square</label>
+            
+            <input type="radio" id="double" name="operation" value="double">
+            <label for="double">Double</label>
+            
         </div>
+            <br><br>
+            
+            <button onclick="calculate()">Calculate</button>
+            
+            <br><br>
+            
+        <h2><label for="result">Result:</label></h2>
+        <input type="text" id="result" readonly>
     </div>
 
-    <script src="./card"></script>
+    <script src="script.js"></script>
+
 </body>
 </html>

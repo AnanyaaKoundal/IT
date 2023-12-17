@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Abyssinica+SIL&family=Alumni+Sans+Collegiate+One:ital@1&family=Dancing+Script:wght@400;500;700&family=Libre+Baskerville:ital@0;1&family=Merriweather:ital,wght@1,300&family=Playfair+Display:ital,wght@0,500;0,600;1,400;1,700&family=Poppins:wght@300;400&family=Roboto+Condensed:ital@1&display=swap');
+*{
+    padding:0;
+    margin:0;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    /* background: linear-gradient(159deg, rgb(91 90 214 / 73%), rgba(33, 243, 222, 0.564), rgb(14, 223, 220)); */
+    background-image: url("https://shorturl.at/dEJ57");
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container .box{
+    position: absolute;
+    width: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fdfdfd42;
+    border: 2px rgb(0, 0, 0) solid;
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+    padding: 25px 25px 45px 25px;
+    border-radius:15px;
+}
+h2{
+    color: rgb(62 89 104);
+    font: 40px 'Playfair', cursive;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+h2::before{
+    position: absolute;
+    content: '';
+    width: 170px;
+    height: 5px;
+    border-radius: 50px;
+    background: linear-gradient(45deg, rgb(203 236 33), rgb(33 243 59));
+    bottom: -8px;
+}
+
+.login::before{
+    width: 80px;
+}
+
+.box .input-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    position: relative;
+}
+.box .input-box input[type='text'],
+.box .input-box input[type='email'],
+.box .input-box input[type='password']{
+    width: 100%;
+    font-size: 16px;
+    color: #000000;
+    background: transparent;
+    margin: 16px 0px;
+    outline: none;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: #000000;
+}
+.box .input-box label{
+    position: absolute;
+    left: 0;
+    top: 12px;
+    font: 16px 'Playfair Display', serif;
+    color: rgb(0, 0, 0);
+    pointer-events: none;
+    transition: 0.2s;
+}
+
+.box .input-box input:focus + label,
+.box .input-box input:valid + label{
+    top: -7px;
+    font-size: 14px;
+}
+
+.box .submit-button{
+    width: 100%;
+    background: linear-gradient(313deg, rgb(58 117 158), rgb(133 171 194), rgb(162 202 226));
+    border:none;
+    cursor: pointer;
+    height: 30px;
+    border-radius: 7px;
+    margin-top: 10px;
+}

@@ -1,0 +1,51 @@
+<!--
+    Create a form that takes data about a pet. The form must be well designed and should accept the pet’s name, age, weight, type, and what it likes most. At the submission of this form create a Pet object in JavaScript filled with these values and log that object and equivalent JSON on the console.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pet Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Pet Form</h2>
+            <form id="petForm">
+                <div class="input-box">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">Pet Name:</label>
+                </div>
+    
+                <div class="input-box">
+                    <input type="text" id="age" name="age" required>
+                    <label for="age">Age:</label>
+                </div>
+    
+                <div class="input-box">
+                    <input type="text" id="weight" name="weight" required>
+                    <label for="weight">Weight (in kg):</label>
+                </div>
+    
+                <div class="input-box">
+                    <input type="text" id="type" name="type" required>
+                    <label for="type">Type:</label>
+                </div>
+    
+                <div class="input-box">
+                    <input type="text" id="likes" name="likes" required>
+                    <label for="likes">What it likes most:</label>
+                </div>
+    
+                <input type="submit" class="submit-button" value="Submit">
+            </form>
+    
+            <div class="login-link">
+                <p class="err"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+[
+    { "name": "Tuffy", "age": 3, "weight": 15, "type": "Dog", "likes": "Playing with toys" },
+    { "name": "Whiskers", "age": 2, "weight": 5, "type": "Cat", "likes": "Napping" },
+    { "name": "Max", "age": 4, "weight": 12, "type": "Dog", "likes": "Chasing balls" },
+    { "name": "Mittens", "age": 1, "weight": 6, "type": "Cat", "likes": "Catching mice" },
+    { "name": "Rocky", "age": 2, "weight": 18, "type": "Dog", "likes": "Going for walks" },
+    { "name": "Smokey", "age": 3, "weight": 8, "type": "Cat", "likes": "Sunbathing" }
+]

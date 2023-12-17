@@ -1,0 +1,70 @@
+<!-- login.html -->
+
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Login</title>
+    <style>
+        .form {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 0;
+            padding-top: 30px;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: rgb(30, 0, 255);
+            text-align: center;
+        }
+
+        form {
+            background-color: rgb(35, 247, 247);
+            max-width: 500px;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background: linear-gradient(221deg, red, green);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 15px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <form method="post">
+            <input type="email" name="email" placeholder="Email">
+            <input type="text" name="name" placeholder="Name">
+            <input type="password" name="password" placeholder="Password">
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</body>
+
+</html>
